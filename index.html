@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101d37"><title>حكايات الغريب — حكاية تفاعلية</title>
+<style>
+:root{--ink:#202b3d;--muted:#7b8797;--paper:#f5f7fa;--blue:#3478e5;--blue-soft:#eaf2ff;--purple:#7259c9;--line:#e6eaf0;--gold:#e5bc6b;--shadow:0 4px 14px #1c2b4210}*{box-sizing:border-box}body{margin:0;background:#e9edf2;color:var(--ink);font-family:Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.75}.app{max-width:520px;min-height:100dvh;margin:auto;background:var(--paper);position:relative;box-shadow:0 10px 48px #17243a12;padding-bottom:148px}.top{height:82px;background:#fff;position:relative;display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid var(--line);color:var(--ink)}.book-thumb{width:48px;height:58px;flex:0 0 48px;border-radius:11px;overflow:hidden;background:#17243c;box-shadow:0 3px 10px #19243b1a}.top .book-thumb img{width:100%;height:100%;display:block;object-fit:cover;object-position:35% 28%;opacity:1}.top-content{position:static;inset:auto;min-width:0;flex:1}.eyebrow{display:inline-block;color:var(--blue);background:#eff5ff;border-radius:999px;padding:1px 8px;font-size:10px;letter-spacing:0}.top h1{font-size:17px;line-height:1.4;margin:2px 0 0;color:var(--ink);text-shadow:none}.top p{font-size:11px;color:var(--muted);margin:0}.header-action{border:0;background:#f2f4f7;color:#5d6a7c;border-radius:50%;width:38px;height:38px;font:22px/1 Arial,sans-serif;cursor:pointer}.bar{height:3px;background:#e8edf4}.bar i{display:block;height:100%;background:var(--blue);width:11%;transition:width .25s}.chapter{margin:14px 14px 8px;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow)}.chapter small{display:inline-flex;align-items:center;color:var(--blue);font-weight:700;background:#eff5ff;padding:2px 9px;border-radius:999px;font-size:11px}.chapter h2{font-size:19px;margin:4px 0 0;color:var(--ink)}.chat{display:flex;flex-direction:column;gap:13px;padding:10px 12px 17px}.message-row{display:flex;align-items:flex-end;gap:7px;width:100%;max-width:100%;animation:in .2s ease-out}.message-row.narrator,.message-row.rwya{justify-content:flex-start}.message-row.gharib{justify-content:flex-end;flex-direction:row-reverse}.avatar{width:39px;height:39px;flex:0 0 39px;border:2px solid white;border-radius:50%;box-shadow:0 2px 7px #15243b1a;position:relative;overflow:visible;background:#dce4f2}.avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}.avatar-reaction{position:absolute;z-index:1;inset:-5px -5px auto auto;width:19px;height:19px;border:1px solid #edf0f5;border-radius:50%;display:grid;place-items:center;background:white;box-shadow:0 2px 5px #17243a16;font:11px/1 Arial,sans-serif}.message-row.gharib .avatar-reaction{inset:-5px auto auto -5px}.message{width:fit-content;max-width:calc(100% - 48px);padding:10px 13px;font-size:14.5px;line-height:1.85;border-radius:16px;box-shadow:0 3px 10px #15243b0a;white-space:pre-line}.message .who{display:block;font-size:10.5px;font-weight:700;margin-bottom:3px;color:var(--muted)}.message.narrator{background:#fff;border:1px solid var(--line);border-bottom-right-radius:5px;color:#303b4e}.message.narrator .who{color:#8290a3}.message.rwya{background:var(--blue-soft);border:1px solid #d9e6fa;border-bottom-right-radius:5px;color:#20324e}.message.rwya .who{color:var(--blue)}.message.gharib{background:#273b5c;border:1px solid #273b5c;border-bottom-left-radius:5px;color:#f7f9fc}.message.gharib .who{color:#bcd4fb}.word{color:var(--blue);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:4px;font-weight:700;cursor:pointer;border:0;background:none;font:inherit;padding:0;touch-action:manipulation}.message.gharib .word{color:#a9c9ff}.word:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:3px}.hint{margin:0 14px 12px;padding:8px 11px;border-radius:12px;background:#f0f5fc;color:#63748b;font-size:11px;border:1px solid #e3eaf4}.controls{display:flex;align-items:center;justify-content:space-between;padding:0 14px 15px;gap:8px}.btn{border:0;border-radius:12px;padding:10px 13px;font:inherit;font-size:13px;font-weight:700;cursor:pointer;touch-action:manipulation}.next{background:var(--blue);color:white;flex:1;box-shadow:0 4px 10px #3478e526}.prev{background:#e9edf3;color:#46556a}.prev:disabled{opacity:.4}.count{font-size:11px;color:var(--muted);white-space:nowrap}.bottomnav{position:fixed;z-index:3;bottom:0;left:50%;transform:translateX(-50%);width:min(520px,100%);padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line);display:flex;justify-content:space-around;box-shadow:0 -5px 20px #15243b0a}.navitem{border:0;background:transparent;color:#7c8797;font:inherit;font-size:10px;display:grid;justify-items:center;gap:1px;cursor:pointer;min-width:72px}.navitem span{font-size:18px;color:#66758a}.navitem.active{color:var(--blue);font-weight:700}.navitem.active span{color:var(--blue)}.sheet-backdrop{position:fixed;inset:0;background:#08132670;z-index:5;display:none;align-items:flex-end;justify-content:center}.sheet-backdrop.show{display:flex}.sheet{width:min(520px,100%);background:#fff;border-radius:20px 20px 0 0;padding:13px 20px calc(22px + env(safe-area-inset-bottom));box-shadow:0 -15px 60px #0002;animation:rise .22s ease-out}.handle{width:38px;height:4px;border-radius:4px;background:#d7dbe3;margin:0 auto 13px}.sheet-head{display:flex;align-items:center;justify-content:space-between}.sheet h3{margin:0;color:var(--blue);font-size:20px}.close{border:0;background:#f0f2f5;border-radius:50%;height:36px;width:36px;font-size:20px;cursor:pointer}.sheet p{margin:8px 0 4px}.sheet small{color:var(--muted)}@keyframes rise{from{transform:translateY(30px);opacity:.4}to{transform:none;opacity:1}}@keyframes in{from{transform:translateY(5px);opacity:.5}to{transform:none;opacity:1}}@media(min-width:700px){body{padding:20px 0}.app{border-radius:20px;overflow:hidden;min-height:calc(100dvh - 40px)}.bottomnav{bottom:20px;border-radius:0 0 20px 20px}}@media(max-width:380px){.message{font-size:14px;padding:9px 11px}.avatar{width:36px;height:36px;flex-basis:36px}.message{max-width:calc(100% - 44px)}}
+</style></head>
+<body><main class="app"><header class="top"><div class="book-thumb"><img src="cover.png" alt="غلاف حكايات الغريب"></div><div class="top-content"><div class="eyebrow">قراءة تفاعلية</div><h1>حكايات الغريب</h1><p>جمال الغيطاني</p></div><button class="header-action" type="button" aria-label="إعادة من البداية" id="headerRestart">↻</button></header><div class="bar"><i id="progress"></i></div><section class="chapter"><small id="sceneNo"></small><h2 id="sceneTitle"></h2></section><section class="chat" id="chat" aria-live="polite"></section><p class="hint">اضغط على أي كلمة زرقاء لتعرف معناها</p><section class="controls"><button class="btn prev" id="prev">السابق</button><span class="count" id="count"></span><button class="btn next" id="next">تابع الحكاية ←</button></section><nav class="bottomnav"><button class="navitem active" aria-label="الحكاية"><span>▤</span>الحكاية</button><button class="navitem" id="glossaryNav"><span>⌕</span>معاني الكلمات</button><button class="navitem" id="restart"><span>↻</span>من البداية</button></nav></main><div class="sheet-backdrop" id="backdrop" role="presentation"><section class="sheet" role="dialog" aria-modal="true" aria-labelledby="term"><div class="handle"></div><div class="sheet-head"><h3 id="term"></h3><button class="close" id="close" aria-label="إغلاق">×</button></div><p id="meaning"></p><small>معناها في سياق الحكاية</small></section></div>
+<script>
+const scenes=[
+{title:"فجوة في الدفاتر",lines:[
+["narrator","في صباحٍ من فبراير عام 1974، كان رئيس المؤسسة يكتب مذكرةً عن سائقٍ اختفى في أيام الحرب. كانت القافلة قد تحركت إلى السويس، لكن السائق عبد الرحمن محمود علي لم يعد، ولم تعد السيارة بحمولتها."],
+["rwya","كيف يتحول غياب رجل إلى حكايةٍ كاملة؟"],
+["gharib","حين تعجز الأوراق عن الإجابة، يبدأ الناس في تذكّر ما رأوه. لكن الذاكرة لا تسير دائماً في طريقٍ واحد."],
+["narrator","خرج عبد الرحمن في أكتوبر 1973 مع سيارة نقل تابعة للمؤسسة. انقطع خبره، وبقيت حمولة السيارة ومصيره مجهولين. عندها شُكّلت لجنةٌ لتجمع ما بقي من سجلات وشهادات."]]},
+{title:"مهمة البحث",lines:[
+["narrator","تسلّم شفيق الجواهري ومعه طايل أفندي مهمة البحث. راجعا أوراقاً، وسألا عن السيارة والحمولة، وحاولا أن يحددا آخر طريقٍ سلكه السائق."],
+["rwya","كل ملفٍّ فيه جزءٌ من الحكاية، لكن لا ملفّ يرويها كلها."],
+["gharib","المذكرة الرسمية تذكر ما يلزم للعمل. أما خوف الرجل، وعاداته، وما كان يراه في طريقه، فقد لا يظهر فيها."],
+["narrator","طال الانتظار في المكاتب. وعندما صار البحثُ عملاً ميدانياً، اتجه شفيق وطايل إلى بيت عبد الرحمن في حي العطوف، يسألان أمه عن ابنها الغائب."]]},
+{title:"البيت في حي العطوف",lines:[
+["narrator","وجداهما في بيتٍ متواضع. جلست الأم بين أشياء ابنها، وأجابت بما تعرف. لم تكن تملك خبراً مؤكداً عن مصيره، لكنها حفظت تفاصيل يومه الأخير كما تحفظ الأم ملامح ولدها."],
+["rwya","هل أخبرها إلى أين سيذهب؟"],
+["narrator","قالت إنه خرج في مهمته المعتادة، ثم تأخر. لم تعرف هل يعود في الليل أم يغيب أياماً؛ فقد اعتادت أن تأخذ عمله به إلى مدنٍ وطرقٍ مختلفة."],
+["gharib","حتى الأشياء التي تركها في البيت صارت دليلاً صغيراً: موضعها، وما غاب منها، وما بقي كما هو."]]},
+{title:"ما يقوله الملف",lines:[
+["narrator","فتح شفيق الملف الأصفر. كان مرتباً بعناية: شهادات، ورخصة قيادة، وسنوات خدمة، وبيانات عن عبد الرحمن محمود علي، المولود عام 1944، السائق الذي كانت مهمته الأخيرة إلى السويس."],
+["rwya","أيمكن لملفٍ مرتب أن يكشف حياة صاحبه؟"],
+["narrator","يحفظ الملف الوظيفة والسنوات والأرقام، لكنه لا يحفظ ما كان يخشاه الرجل، ولا ما يحبّه، ولا ما قد يفعله إذا وجد مدينةً كاملةً في خطر."],
+["gharib","الورق يثبت بعض الحقائق، ويترك فراغاتٍ لا تملؤها الخانات."]]},
+{title:"شهادة الأم",lines:[
+["narrator","سألها شفيق عن آخر مرة رأت فيها ابنها. تذكّرت خروجه، وكلاماً قصيراً قاله لها، ثم أياماً مرّت بلا عودة. كانت تسأل عن أخبار السويس، وتنتظر أن تسمع اسمه بين الناجين."],
+["rwya","وهل عرف أحدٌ من أصدقائه أين ذهب؟"],
+["narrator","لم يكن كثير الكلام عن نفسه، وكان عمله يأخذه من مكانٍ إلى مكان. ومن عرفه لم يستطع أن يروي إلا ما شاهده بنفسه."],
+["gharib","شهادة الأم تحفظ غيابه كما عاشته هي: بابٌ يُفتح، وموعدٌ يتأخر، وانتظارٌ لا ينتهي بخبرٍ قاطع."]]},
+{title:"الطريق إلى السويس",lines:[
+["narrator","سبقت رحلة اللجنة اتصالاتٌ وضماناتٌ للطريق. وبعد رفع الحصار، انطلق شفيق وطايل بين بقايا إطاراتٍ محترقة، وأكياسٍ ممزقة، وزجاجٍ وحطامٍ تركته الحرب."],
+["rwya","كان الطريق نفسه يحمل آثار من مرّوا به."],
+["narrator","تخيّل شفيق عبد الرحمن يقود السيارة وسط الدخان، باحثاً عن طريقٍ يصل به إلى المدينة. كل أثرٍ على جانب الطريق كان يفتح سؤالاً جديداً."],
+["gharib","ليس كل أثرٍ يوصلك إلى صاحبه. أحياناً يدلّك فقط على أن أحداً مرّ من هنا."]]},
+{title:"مدينة خرجت من الحصار",lines:[
+["narrator","وصلت اللجنة إلى السويس بعد أن فُتح الطريق وانتهى الحصار. بدت المدينة كأنها خرجت من امتحانٍ طويل: جدرانٌ مثقوبة، ونوافذ بلا زجاج، وشوارع تحمل آثار القصف."],
+["rwya","بدأ الجواهري التحقيق الرسمي، وطلب من زملائه تسجيل كل شهادةٍ وتاريخٍ ومستند."],
+["narrator","كان بعض من التقوهم يذكرون رجلاً ساعد الناس وسط الخطر. وآخرون وصفوا مشاهد متباعدةً لا تتطابق في الاسم ولا في الوقت."],
+["gharib","المدينة تحفظ الوجوه والأصوات، لكن الحكايات تتغير كلما انتقلت من راوٍ إلى آخر."]]},
+{title:"السيارة التي لم تعد",lines:[
+["narrator","في إدارة المرور، ظهرت إشارةٌ إلى سيارة النقل رقم 67073. سُجّل دخولها إلى السويس في 22 أكتوبر، وحملت بطاقة السائق رقماً آخر. لكن سجل الخروج لم يحسم أين ذهبت السيارة."],
+["rwya","بحثوا عنها في الطريق، وفي الورش، وبين السيارات التي احترقت أو استُعملت قطعاً للغيار."],
+["narrator","لم يعثروا على السيارة ولا على حمولتها. بقي احتمال أن تكون قد دُمّرت أو استُخدمت، لكن لا ورقة تثبت ذلك ولا شاهدٌ يحدد مكانها."],
+["gharib","المفقود لا يصبح موجوداً لمجرد أن نكتب اسمه في خانة. أين السيارة؟ وأين السائق؟ ظل السؤالان مفتوحين."]]},
+{title:"رجلٌ بأسماء كثيرة",lines:[
+["narrator","أخذ شفيق يعرض صورة عبد الرحمن ويسأل عنها. بعض الشهود قالوا إنهم يعرفون رجلاً يشبهه، لكن الاسم الذي استدعوه لم يكن واحداً: كمال، أو الغريب، أو اسمٌ آخر حفظته الذاكرة."],
+["rwya","هل كان الرجل يغيّر اسمه، أم أن الناس جمعوا أشخاصاً مختلفين في صورةٍ واحدة؟"],
+["narrator","قيل إن رجلاً ظهر قرب الكوبري، وإن آخر شوهد بين رجال المقاومة. وفي بعض الأوراق إشاراتٌ إلى أناسٍ لم يبق من أسمائهم إلا لقبٌ أو وصف."],
+["gharib","كل راوٍ يمسك طرفاً من الحكاية. وحين تتباعد الأطراف، لا نستطيع أن ندّعي أننا رأينا الصورة كاملة."]]},
+{title:"شقيق أفندي يستقصي الحقيقة",lines:[
+["narrator","كان من بين الشهادات وصفٌ لرجلٍ وقف عند كوبري الزرازير حين تقدمت الدبابات. سأله فتاوي عن الطريق، فأجابه: «ممكن أعرف». ثم ظهر سلاحه، وبدأ الاشتباك."],
+["rwya","هل عرف الشاهد اسمه؟"],
+["narrator","قال إن الرجل قاتل ببسالة، ثم اختفى وسط الدخان. لم يستطع أن يجزم بأنه عبد الرحمن؛ فقد رأى ملامحَ عابرةً في لحظةٍ لا تسمح بتفاصيل كثيرة."],
+["gharib","قد يكون هو، وقد لا يكون. الشجاعة التي يصفها الشاهد لا تكفي وحدها لإثبات الهوية."]]},
+{title:"حين صنعت المدينة أسطورتها",lines:[
+["narrator","تكررت قصصٌ عن رجلٍ يساعد الناس: ينقلهم بعيداً عن الخطر، ويظهر عند اشتداد المعركة، ثم يختفي قبل أن يسأله أحدٌ عن اسمه."],
+["rwya","ومع مرور الوقت، صارت الحكايات أقرب إلى أسطورةٍ يتداولها أهل المدينة."],
+["narrator","حكى بائعٌ عن رجلٍ مرّ من الشارع، وروى آخر عن عابرٍ أنقذ أسرةً، وتحدثت امرأةٌ عن شخصٍ غريبٍ ساعدها. لم تقع كل الأحداث في وقتٍ واحد، ولم يجتمع الشهود على روايةٍ واحدة."],
+["gharib","الأسطورة لا تُثبت ما حدث، لكنها تكشف كيف حفظ الناس أثراً لم يريدوا أن يضيع."]]},
+{title:"ستة أيام من الأسئلة",lines:[
+["narrator","دوّن شفيق في تقريره اليومي ما فعله: زار حي العطوف، سأل الأسرة، واتصل بالمسؤولين. ثم انتقل إلى السويس ليراجع السجلات ويتتبع آثار الطريق."],
+["rwya","وفي الأيام التالية؟"],
+["narrator","قابل رجالاً من المقاومة، وسمع أوصافاً للغريب، وعاد إلى ملفات المرور. كل شاهدٍ أضاف تفصيلاً، لكن التفاصيل لم تتجمع في صورةٍ حاسمة."],
+["gharib","كان عليه أن يفرّق بين وثيقةٍ لها تاريخٌ ورقم، وشهادةٍ حفظت ما رآه صاحبها، وحكايةٍ كبرت مع تداولها."]]},
+{title:"ثلاثة مواقف",lines:[
+["narrator","مع نهاية البحث، بقيت أمام اللجنة ثلاثة أشياء: ملفّ يثبت أن عبد الرحمن كان سائقاً وأن مهمته الأخيرة قادته إلى السويس؛ وشهاداتٌ رأت الغريب بأسماءٍ وأوصاف مختلفة؛ وسيارةٌ لم يُعثر عليها."],
+["rwya","هل تكفي كثرة الشهادات لتثبت أن الغريب هو عبد الرحمن؟"],
+["narrator","لم تجد اللجنة دليلاً قاطعاً. بعض الروايات تأيدت من أكثر من شخص، لكن الشهود لم يروا الرجل في وقتٍ واحد، ولم تتفق أقوالهم على اسمه ومصيره."],
+["gharib","الدليل يثبت ما رآه صاحبه أو سجّلته الوثيقة. وما وراء ذلك يظل سؤالاً يحتاج إلى قرينةٍ أخرى."]]},
+{title:"موضعٌ قبل أن يقبره",lines:[
+["narrator","في مساء اليوم السادس، عاد شفيق إلى سؤال عبد الرحمن: هل وجدوا له قبراً؟ لم يكن هناك موضعٌ مؤكد، ولا شاهدٌ استطاع أن يقول كيف انتهت رحلته."],
+["rwya","إذن بقيت الأم بلا جواب، وبقيت الأوراق عاجزةً عن إغلاق الحكاية."],
+["narrator","رتّب الجواهري الأوراق في ملفاتٍ منفصلة. رفض أن يمحو الحكايات لأنها متناقضة، ورفض أيضاً أن يكتبها كأنها حقيقةٌ ثبتت."],
+["gharib","لم يُعرف مصيري على وجه اليقين. لكن المدينة تذكرت رجلاً يخرج إلى الخطر ليعين غيره، وصارت تسأل: أكان ذلك أنا؟"],
+["rwya","ربما لا تملك الحكاية جواباً أخيراً. لكنها تترك لنا أسماءً، وشهاداتٍ، وأثراً في ذاكرة الناس."]]}];
+scenes.splice(12,0,
+{title:"اليوم الأول: إلى حي العطوف",lines:[
+["narrator","بدأ شفيق الجواهري وطايل أفندي من بيت الأسرة. أمضيا ساعاتٍ في الحديث مع الأم، وسألا عن الأوراق والأسماء والموعد الذي خرج فيه عبد الرحمن إلى مهمته الأخيرة."],
+["rwya","كانا يبحثان عن معلومةٍ لم تُكتب في الملف."],
+["narrator","فتشا في الاحتمالات العادية أولاً: هل تأخر في الطريق؟ هل أصاب السيارة عطل؟ هل عاد إلى عمله ثم انقطع خبره؟ لم يجدوا ما يثبت أياً منها."],
+["gharib","البحث الدقيق يبدأ بما يمكن التحقق منه، حتى إن كانت الإجابة غير التي نتمناها."]]},
+{title:"اليوم الثاني: إلى السويس",lines:[
+["narrator","في اليوم التالي، توجها إلى السويس بعد التنسيق مع المسؤولين. لم يكن الطريق آمناً أو سهلاً؛ آثار الحصار والحرب ظاهرة على المركبات والطرقات."],
+["rwya","حاولا أن يسيرا في الطريق نفسه الذي سلكته سيارة النقل."],
+["narrator","كلما اقتربا من المدينة، زادت الأسئلة: أي ممرٍّ دخلت منه السيارة؟ أين توقفت؟ وهل أكملت طريقها إلى المكان الذي قصدته؟"],
+["gharib","المكان يشرح بعض ما حدث، لكنه لا يستطيع وحده أن يخبرنا من كان خلف المقود."]]},
+{title:"اليوم الثالث: سجلّ المرور",lines:[
+["narrator","عاد شفيق إلى دفاتر المرور. وجد قيداً لسيارة النقل رقم 67073، يذكر دخولها إلى السويس في 22 أكتوبر. وظهر في السجل رقم بطاقة السائق، لكن قيد خروجٍ يوضح مصيرها لم يظهر."],
+["rwya","هل يعني غياب قيد الخروج أنها لم تغادر؟"],
+["narrator","لا. الدفتر يثبت ما سُجّل فيه، ولا يثبت وحده ما جرى بعد ذلك. وفي أيام الفوضى، ضاعت أوراقٌ كثيرة واختلطت السجلات."],
+["gharib","نستطيع أن نقول: السيارة دخلت وفق القيد. أما أين انتهت، فلا نملك عليه دليلاً."]]},
+{title:"اليوم الرابع: رجال المقاومة",lines:[
+["narrator","اتصل الجواهري بأسرته في القاهرة، بينما واصل شفيق السؤال في السويس. التقى رجالاً من المقاومة الشعبية، وسمع منهم عن سائقٍ واجه الدبابات وساعد الناس على المرور."],
+["rwya","بعضهم سمّى الرجل الغريب، وبعضهم ذكر لقباً آخر."],
+["narrator","حكى أحدهم عن رجلٍ لم يتوقف عند حدود المهمة، بل خاطر بنفسه ليخرج الناس من الخطر. لكن الشاهد لم يكن متأكداً من اسمه الحقيقي."],
+["gharib","قد تصدق بطولة الرجل، ويبقى اسمه موضع سؤال. هذان أمران مختلفان."]]},
+{title:"اليوم الخامس: روايات متباعدة",lines:[
+["narrator","جمع شفيق ما استطاع من شهاداتٍ عند نقطة المثلث وفي أحياء المدينة. تحدثت امرأةٌ عجوز، وبائعٌ، وعطّار، وصياد سمك عن الغريب."],
+["rwya","كل واحدٍ رآه في وقتٍ مختلف، أو في طرفٍ آخر من المدينة."],
+["narrator","لم يضعوه جميعاً أمام الخطر نفسه، ولم يصفوا فعلاً واحداً. كانت الحكايات تتغير وهي تنتقل من شخصٍ إلى آخر، وتتشابه في أن صاحبها رجلٌ مجهول يساعد الناس."],
+["gharib","كثرة الروايات لا تجعلها شهادةً واحدة. علينا أن نحفظ اختلافها كما نحفظ ما اتفقت عليه."]]},
+{title:"اليوم السادس: السؤال القديم",lines:[
+["narrator","في اليوم السادس، عاد شفيق إلى موضعٍ قيل إنه قد يكون قبر عبد الرحمن. ذهب مع بعض شباب المدينة، وفتشوا المكان، لكنهم لم يجدوا علامةً تحسم أن الرجل دُفن هناك."],
+["rwya","رجعوا إلى الأم بلا قبرٍ مؤكد، وبلا خبرٍ يطمئنها."],
+["narrator","ظل الملف يثبت اسمه وعمله ومهمته الأخيرة، بينما بقيت المدينة تروي حكاياتٍ عن رجلٍ لم يعرف الناس اسمه الكامل."],
+["gharib","أحياناً يكبر السؤال حتى يتجاوز ما تستطيع الأوراق إغلاقه."]]}); scenes.splice(11,1);
+const meanings={"متقطّعة":"غير متصلة؛ تظهر بينها فترات انقطاع.","محاضر":"سجلات رسمية تُدوّن فيها أقوال الناس أو تفاصيل الوقائع.","الحصار":"إحاطة مكان ومنع الدخول إليه أو الخروج منه.","القافلة":"مجموعة مركبات أو أشخاص يسيرون معاً في طريق واحد.","الشهادة":"قول شخص عمّا رآه أو عرفه عن واقعة.","القرائن":"علامات أو معلومات تساعد على فهم الحقيقة، لكنها لا تثبتها وحدها.","مفقود":"غائب لا يُعرف مكانه أو ما حدث له.","السجلات":"دفاتر أو ملفات تُحفظ فيها المعلومات الرسمية.","اللجنة":"مجموعة أشخاص كُلّفوا ببحث موضوع أو متابعة أمر.","الاستقصاء":"البحث الدقيق عن المعلومات من مصادر وشهادات متعددة.","الحمولة":"الأشياء أو البضائع التي تنقلها سيارة أو وسيلة نقل.","رواية":"حكاية تُروى عن أحداث أو أشخاص.","ذاكرة":"قدرة الإنسان على تذكر ما رآه أو عاشه.","الدليل":"معلومة أو وثيقة قوية تساعد على إثبات أمر."};
+const reactionRules=[[/غياب|مفقود|مصيره|قبر|انتظار|لم يعد|بلا عودة|بلا خبر/,{emoji:"😔",label:"تعاطف وحزن"}],[/هل|كيف|أين|أيمكن|لماذا|؟|سؤال/,{emoji:"🤔",label:"تفكير وتساؤل"}],[/دليل|قرينة|ملف|سجل|وثيقة|رقم|شهادة|دفتر/,{emoji:"🔎",label:"تركيز على البحث"}],[/خطر|دبابات|حرب|قصف|معركة|مقاومة/,{emoji:"😮",label:"قلق من الخطر"}],[/ساعد|أنقذ|بطولة|شجاعة|ذاكرة|مدينة/,{emoji:"💛",label:"تأثر وتقدير"}],[/حكاية|أسطورة|رواية|ذكرى/,{emoji:"✨",label:"تأمل في الحكاية"}]];function getReaction(who,txt){for(const [pattern,face] of reactionRules){if(pattern.test(txt))return face}return who==="gharib"?{emoji:"🙂",label:"إصغاء"}:{emoji:"💬",label:"سرد"}}const labels={narrator:"الراوية · سرد",gharib:"الغريب",rwya:"الراوية"};let index=0;const chat=document.getElementById('chat');function paint(){const s=scenes[index];document.getElementById('sceneNo').textContent=`المشهد ${index+1} من ${scenes.length}`;document.getElementById('sceneTitle').textContent=s.title;document.getElementById('count').textContent=`${index+1} / ${scenes.length}`;document.getElementById('progress').style.width=`${(index+1)/scenes.length*100}%`;document.getElementById('prev').disabled=index===0;document.getElementById('next').textContent=index===scenes.length-1?'أعد القراءة ↻':'تابع الحكاية ←';chat.innerHTML='';s.lines.forEach(([who,txt])=>{const row=document.createElement("div");row.className=`message-row ${who}`;const face=getReaction(who,txt);const avatar=document.createElement("div");avatar.className="avatar";avatar.title=face.label;const portrait=who==="gharib"?"avatar-gharib.png":"avatar-rawya.png";avatar.innerHTML=`<img src="${portrait}" alt="${labels[who]}"><span class="avatar-reaction" aria-label="${face.label}">${face.emoji}</span>`;const d=document.createElement("article");d.className=`message ${who}`;d.innerHTML=`<span class="who">${labels[who]}</span>${txt}`;row.append(avatar,d);chat.appendChild(row)});for(const term of Object.keys(meanings)){const re=new RegExp(term,'g');chat.innerHTML=chat.innerHTML.replace(re,`<button class="word" type="button" data-term="${term}">${term}</button>`)}chat.querySelectorAll('.word').forEach(b=>b.addEventListener('click',()=>showMeaning(b.dataset.term)));window.scrollTo({top:0,behavior:'smooth'})}function showMeaning(term){document.getElementById('term').textContent=term;document.getElementById('meaning').textContent=meanings[term];document.getElementById('backdrop').classList.add('show');document.getElementById('close').focus()}document.getElementById('next').onclick=()=>{index=(index+1)%scenes.length;paint()};document.getElementById('prev').onclick=()=>{index=Math.max(0,index-1);paint()};document.getElementById('restart').onclick=()=>{index=0;paint()};document.getElementById('headerRestart').onclick=()=>{index=0;paint()};document.getElementById('glossaryNav').onclick=()=>showMeaning('القرائن');document.getElementById('close').onclick=()=>document.getElementById('backdrop').classList.remove('show');document.getElementById('backdrop').addEventListener('click',e=>{if(e.target.id==='backdrop')e.currentTarget.classList.remove('show')});document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('backdrop').classList.remove('show')});paint();
+</script></body></html>
+
+
+
+
+
+
